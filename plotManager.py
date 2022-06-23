@@ -58,7 +58,7 @@ class plotManager:
             plt.xlabel("Hourly", fontsize=15)
         elif attribute_name == "month":
             plt.title("Bike Rentals on Monthly Basis", fontsize=15)
-            sns.boxplot(df.index.month, df['rentals'])
+            sns.boxplot(df["month"], df['rentals'])
             plt.xlabel("Month", fontsize=15)
             tick_val = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
             tick_lab = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']

@@ -12,14 +12,16 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 if __name__ == '__main__':
     data_path = Utils.load_config("DATASET_PATH")
-    df = pd.read_csv(data_path, index_col='datetime', parse_dates=True)
+    df = pd.read_csv(data_path, index_col='instant', parse_dates=True)
+    print(df.head())
+
 
 
     ### 1) EXPLORATORY DATA ANALYSIS ###
 
     plotMan = plotManager(df)
 
-    """
+
     # CHECKING MISSING VALUE IN DATASET
     plotManager.check_missing_values(df)
 
@@ -53,7 +55,7 @@ if __name__ == '__main__':
     
     # It is observed that atemp and temp are highly correlated and one can be dropped to avoid multicollinearity
     df.drop('atemp',axis=1,inplace=True)
-    """
+
 
 
     ### 2) DATA PREPROCESSING ###
