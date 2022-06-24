@@ -82,10 +82,11 @@ class plotManager:
         sns.heatmap(df.corr(), annot=True)
         plt.show()
 
+    @staticmethod
     def forecast_plot(df):
         plt.figure(figsize=(18, 6))
-        plt.plot(df['pred'][0:500])
-        plt.plot(df['rentals'][0:500])
-        plt.title('MLP Regressor Regressor - Forecast vs Actual Record')
+        plt.plot(df['predicted_rentals'][0:100])
+        plt.plot(df['rentals'][0:100])
+        plt.title('MLP Regressor - Forecast vs Actual Observations')
         plt.xlabel('DateTime', fontsize=15)
-        plt.ylabel('Value of Bike Rental', fontsize=15)
+        plt.ylabel('Number of Bike Rentals', fontsize=15)
