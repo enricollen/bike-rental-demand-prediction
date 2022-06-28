@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import missingno as mn
 
+
 class plotManager:
 
     def __init__(self, df):
@@ -84,9 +85,15 @@ class plotManager:
 
     @staticmethod
     def forecast_plot(df):
+        df_subset = df[0:7*24]
+
         plt.figure(figsize=(18, 6))
-        plt.plot(df['predicted_rentals'][0:500])
-        plt.plot(df['rentals'][0:500])
+        plt.plot(df_subset['predicted_rentals'], label='Predicted rentals')
+        plt.plot(df_subset['rentals'], label='Real rentals')
         plt.title('MLP Regressor - Forecast vs Actual Observations')
         plt.xlabel('DateTime', fontsize=15)
         plt.ylabel('Number of Bike Rentals', fontsize=15)
+        plt.legend()
+
+        labels = df_subset.index.strftime('%H:00 %a - %b %d')
+        plt.xticks(df_subset.index[0::12], labels[0::12], rotation=45)
