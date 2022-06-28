@@ -85,8 +85,8 @@ class plotManager:
     @staticmethod
     def forecast_plot(df):
         plt.figure(figsize=(18, 6))
-        plt.plot(df['predicted_rentals'][0:100])
-        plt.plot(df['rentals'][0:100])
+        plt.plot(df['predicted_rentals'][0:500])
+        plt.plot(df['rentals'][0:500])
         plt.title('MLP Regressor - Forecast vs Actual Observations')
         plt.xlabel('DateTime', fontsize=15)
         plt.ylabel('Number of Bike Rentals', fontsize=15)
