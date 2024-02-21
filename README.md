@@ -1,9 +1,14 @@
-# bike-rental-demand-prediction
-CAMPO DI INTERESSE: Retailing, in particolare Ottimizzazioni della logistica AI-based.
-L'idea è quella di fornire un sistema a supporto di aziende nel campo del noleggio (outdoor rental), come monopattini elettrici, biciclette o altri mezzi di trasporto. Sfrutteremo dei regressori che imparano da serie storiche di dati dei noleggi passati, e forniscono una predizione riguardante la domanda per i giorni a venire.  
-Alcuni fattori determinanti sono principalmente legati: 
-- al meteo (tempo incerto, pioggia, vento, umidità etc.) 
-- al giorno della settimana (lavorativo, festivo, weekend etc.) 
-- orari interni alla giornata (notte, giorno etc.)  
+# Bike rental Demand Predictor
+🔍 Retailing, particularly AI-based logistics optimizations.
+🌟 The idea is to provide a system to support companies in the rental field (outdoor rental), such as electric scooters, bicycles, or other means of transportation. We will leverage regressors that learn from historical data series of past rentals and provide a prediction regarding the demand for the upcoming days.
+Some determining factors are mainly related to:
 
-Lo scopo è quello di fornire uno strumento di supporto per poter stimare con un certo grado di probabilità i giorni/orari in cui poter indire le manutenzioni ordinarie o aumentare il numero dei veicoli in caso di periodi con maggiori richieste, o distribuzione in diversi punti noleggio
+- 🌦️ Weather (uncertain weather, rain, wind, humidity, etc.)
+- 📅 Day of the week ( working day, holiday, weekend, etc.)
+- 🌙 Time of day (night, day, etc.)
+🎯 The aim is to provide a support tool to estimate with a certain degree of probability the days/times when regular maintenance can be scheduled or increase the number of vehicles in case of periods with higher demand, or distribution in different rental points.
+
+
+
+
+
