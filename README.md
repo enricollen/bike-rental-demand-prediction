@@ -1,5 +1,5 @@
 # Bike rental Demand Predictor
-🔍 Retailing, particularly AI-based logistics optimizations.
+🔍 Retailing, particularly AI-based logistics optimizations.  
 🌟 The idea is to provide a system to support companies in the rental field (outdoor rental), such as electric scooters, bicycles, or other means of transportation. We will leverage regressors that learn from historical data series of past rentals and provide a prediction regarding the demand for the upcoming days.
 Some determining factors are mainly related to:
 
